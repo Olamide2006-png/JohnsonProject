@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>string methods</title>
+
+    </head>
+    <body>
+        <h1>String Methods</h1>
+        <script>
+            var mystring = "i am really hungry for some";
+            console.log(mystring);
+            var myUpperstring = mystring.toUpperCase();
+            console.log(myUpperstring);
+
+            var reallyLocation = mystring.search('really');
+            console.log(reallyLocation);
+            var specialWord = mystring.substr(reallyLocation,6);
+            specialWord = specialWord.toUpperCase();
+            console.log(specialWord);
+            var newstring = mystring.replace('really',specialWord);
+            console.log(newstring);
+            var foods = ["cheese","pie","breakfast","lunch"];
+             console.log(`${mystring} ${foods[0]}`);
+           for( var i=0; i<foods.length; i++){
+            //checking to see if the incrementor is even
+            if( i % 2 === 0){
+                //if it even make the array element uppercase
+                console.log(`${mystring} ${foods[i].toUpperCase()}`);
+
+            }
+        //if it's odd keep it lower
+            else{
+                console.log(`${mystring} ${foods[i]}`);
+
+            }
+          
+            }
+           /* for(var eachfood of foods){
+                console.log(`${mystring} ${eachfood}`);
+
+            }*/
+        
+           
+        </script>
+
+    </body>
+</html>

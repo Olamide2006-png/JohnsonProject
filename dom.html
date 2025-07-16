@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dom Document</title>
+ 
+</head>
+<body>
+<h1>Dom Examples</h1>
+<!--<p id="one">Here is a paragraph with unique id</p>
+    <p class="special">Here is a paragraph </p>
+    <p>Here is another paragraph </p>
+    <p class="special">Here is one more paragraph </p>
+    <h1>Dom Examples</h1>
+    <div id="special">
+    
+    <p >Here is a paragraph with unique id</p>
+    <p >Here is a paragraph </p>
+    <p>Here is another paragraph </p> 
+    <p >Here is one more paragraph </p>
+    </div>
+    -->
+<div><p>This is the first paragraph on the page.</p> 
+    <p >Here is a new pargraph</p>
+</div>
+
+    <form>
+        <label>
+            <input type="checkbox">YES!</label>
+        </form>
+   
+    <script>
+       document.getElementById('one').style.color = 'red';
+       var myparagraphs =  document.getElementsByTagName('p');
+       console.log(myparagraphs)
+       for(i = 0;i<myparagraphs.length;i++){
+        myparagraphs[i].style.color= "red";
+        alert(`showing paragraph${i}`);
+       }
+       var myclass = document.getElementsByClassName('special');
+       for (i = 0; i<myclass.length;i++){
+        myclass[i].style.color='green';
+
+       }
+       
+       
+    
+ 
+    
+     var mytext = document.querySelectorAll('#special p');
+    for(var i= 0;i<mytext.length;i++){
+        mytext[i].style.color ="";
+    }
+        
+
+     
+    var myDiv = document.querySelector('#special');
+    myDiv.innerHTML = "<p>Here is my new paragraph</p>";
+    
+    var firstpara =  document.querySelector('p');
+    firstpara.className = "blue";
+   
+        
+
+         var mytag = document.createElement('p');
+         var mytext = document.createTextNode("Here is a new paragraphs");
+         mytag.appendChild(mytext);
+         var myDiv = document.querySelector('div');
+         myDiv.appendChild(mytag);
+         
+         var mycheckbox = document.querySelector('input');
+         mycheckbox.setAttribute('checked','checked');
+         var myDiv = document.querySelector('div');
+         myDiv.removechild(myDiv.children[1]);
+    </script>
+</body>
+</html>
