@@ -1,0 +1,21 @@
+body{
+    font-family: verdana;
+    font-size: 20px;
+    
+}
+#mysubmit{
+    background-color: rgb(202, 202, 255);
+    padding: 10px 20px;
+    border-color: transparent;
+    border-radius: 10px;
+    color: rgb(38, 18, 18);
+    transition: background-color 0.3s;
+    cursor: pointer;
+    margin: 0  20px;
+    font-size: 15px;
+}
+
+#mysubmit:hover{
+    background-color: rgb(243, 84, 84);
+
+}

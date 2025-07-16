@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+<body>
+    <h1>Function In Javascript</h1>
+    
+</body>
+<script>
+    function dostuff(){
+    var mystring = "Here is a string of text";
+    var myUpperstring = mystring.toUpperCase();
+    console.log(mystring);
+    console.log(myUpperstring);
+    }
+    dostuff();
+  
+function checknum(){
+    var usernum = prompt("enter a whole number","");
+    if(usernum < 10){
+        console.log("you have entered a number less than 10");
+        for( var i = 0; i<10;i++){
+        }
+      console.log(`here is a number ${[i]}`);
+     
+    }else if(usernum > 9){
+        console.log("you have entered a big number");
+        
+    }
+    else{
+        console.log("Error: you didn't have a number");
+    }
+    
+}
+//checknum();
+function uppermessage(message){
+    var uppermessage = message.toUpperCase();
+    console.log(uppermessage);
+
+
+}
+uppermessage('here is a message');
+function addnum(num1,num2,num3){
+   
+    var sum = num1 +num2 + num3 ;
+    console.log(sum)
+}
+addnum(1,2,3)
+function returnsum(num1,num2){
+    var sum = num1 + num2;
+    return sum;
+
+}
+console.log(returnsum(3,5));
+console.log(Math.random() );
+function randomint(min,max){
+    var  numofvalues = max - min + 1;
+    console.log(numofvalues);
+}
+randomint(5,10);
+//creating a random value 
+var foods = ["cheese","chicken","grapes","harmburgers"]
+function randomwork(min,max){
+    var randomnum = max - min + 1;
+    var randomval = Math.random();
+    var randomfigure = randomval * randomnum;
+    var randomlevel = Math.floor(randomfigure);
+    console.log( randomlevel );
+    var finalvalue = min + randomlevel;
+    console.log(finalvalue);
+    return finalvalue;
+    
+
+}
+//randomwork(5,10);
+console.log(foods[randomwork(0,3)]);
+//anonymous functions
+var greeting = function(){
+  var name = prompt("Please tell me your name","");
+  console.log(` Hello ${name.toUpperCase()} , How are you doing today`);
+
+
+}
+greeting();
+
+
+</script>
+</html>
